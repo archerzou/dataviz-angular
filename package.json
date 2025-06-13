@@ -16,7 +16,16 @@
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
+    "@apollo/client": "^3.13.8",
+    "@reduxjs/angular-redux": "^2.0.1",
+    "@reduxjs/toolkit": "^2.2.7",
+    "@tailwindcss/postcss": "^4.1.10",
+    "apollo-angular": "^10.0.3",
+    "graphql": "^16.11.0",
+    "postcss": "^8.5.5",
+    "redux": "^5.0.0",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^4.1.10",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
