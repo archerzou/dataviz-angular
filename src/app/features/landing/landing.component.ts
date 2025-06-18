@@ -5,6 +5,8 @@ import { LandingFeaturesComponent } from "./landing-features/landing-features.co
 import { LandingTestimonialsComponent } from "./landing-testimonials/landing-testimonials.component";
 import { LandingCtaComponent } from "./landing-cta/landing-cta.component";
 import { LandingFooterComponent } from "./landing-footer/landing-footer.component";
+import { LoginModal } from "../auth/components/login-modal/login-modal";
+import { SignupModal } from '../auth/components/signup-modal/signup-modal';
 
 @Component({
   selector: 'app-landing',
@@ -16,6 +18,8 @@ import { LandingFooterComponent } from "./landing-footer/landing-footer.componen
     LandingTestimonialsComponent,
     LandingCtaComponent,
     LandingFooterComponent,
+    LoginModal,
+    SignupModal
   ],
   templateUrl: './landing.component.html',
 })

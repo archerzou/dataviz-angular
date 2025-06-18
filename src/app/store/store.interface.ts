@@ -2,7 +2,7 @@
 // import { ISQLPayload } from "../shared/interfaces/app.interface";
 
 export interface IReduxState {
-  // authUser: any;
+  authUser: any;
   // logout: boolean;
   // datasource: IAppDataSource;
   // collections: string[];

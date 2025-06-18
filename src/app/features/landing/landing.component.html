@@ -11,4 +11,11 @@
 
   <app-landing-footer />
 
+  @if (isLoginModalOpen()) {
+    <app-login-modal (close)="closeLoginModal()" (signup)="switchToSignup()" />
+  }
+  @if (isSignupModalOpen()) {
+    <app-signup-modal (close)="closeSignupModal()" (login)="switchToLogin()" />
+  }
+
 </div>

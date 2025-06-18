@@ -8,9 +8,13 @@ import { environment } from '../environments/environment';
 import { routes } from './app.routes';
 import { provideRedux } from '@reduxjs/angular-redux';
 import { store } from './store';
+import {provideHttpClient} from '@angular/common/http';
+import {provideAnimations} from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideHttpClient(),
+    provideAnimations(),
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideRouter(routes),
