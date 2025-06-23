@@ -7,12 +7,16 @@ import { CommonModule } from '@angular/common';
 
 import { IReduxState } from '../../store/store.interface';
 import { DELETE_DATA_SOURCE } from './graphql/datasource';
+import { addDataSource } from './reducers/datasource.reducer';
 import { setLocalStorageItem } from '../../shared/utils/utils';
 import { ToastService } from '../../shared/services/toast.service';
+import {AddDataSourceModal} from './components/datasource-modal/add-datasource-modal';
+import {DatasourcesList} from './components/datasources-list/datasources-list';
+import {EditDataSourceModal} from './components/datasource-modal/edit-datasource-modal';
 
 @Component({
   selector: 'app-datasource',
-  imports: [CommonModule],
+  imports: [CommonModule, AddDataSourceModal, DatasourcesList, EditDataSourceModal],
   templateUrl: './datasource.html'
 })
 export class Datasource {
@@ -87,11 +91,11 @@ export class Datasource {
             const active = datasource.active;
             const hasActiveDatasource = sources.some((source: IDatasource) => source.id === active?.id);
             const activeSource = hasActiveDatasource ? active : sources[0];
-            // this.dispatch(addDataSource({
-            //   active: activeSource,
-            //   database: activeSource?.database,
-            //   dataSource: sources
-            // }));
+            this.dispatch(addDataSource({
+              active: activeSource,
+              database: activeSource?.database,
+              dataSource: sources
+            }));
             setLocalStorageItem('activeProject', JSON.stringify(activeSource));
             this.dataSources = sources;
             this.toastService.show('Data source deleted successfully.', 'error');

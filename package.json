@@ -23,6 +23,7 @@
     "@tailwindcss/postcss": "^4.1.10",
     "apollo-angular": "^10.0.3",
     "graphql": "^16.11.0",
+    "ngx-highlightjs": "^14.0.1",
     "postcss": "^8.5.5",
     "redux": "^5.0.0",
     "rxjs": "~7.8.0",

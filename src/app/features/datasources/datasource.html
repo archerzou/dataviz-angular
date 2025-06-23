@@ -14,16 +14,16 @@
     </div>
   </div>
 
-<!--  <app-datasources-list [dataSources]="dataSources" (edit)="showEditModal($event)"-->
-<!--                        (delete)="deleteDataSource($event)" />-->
+  <app-datasources-list [dataSources]="dataSources" (edit)="showEditModal($event)"
+                        (delete)="deleteDataSource($event)" />
 
-<!--  @if (isAddModalOpen()) {-->
-<!--    <app-add-datasource-modal (close)="hideAddModal()" (submit)="handleAdd()" />-->
-<!--  }-->
+  @if (isAddModalOpen()) {
+    <app-add-datasource-modal (close)="hideAddModal()" (submit)="handleAdd()" />
+  }
 
-<!--  @if (isEditModalOpen()) {-->
-<!--    <app-edit-datasource-modal [projectId]="projectId()" (close)="hideEditModal()" (submit)="handleEdit()" />-->
-<!--  }-->
+  @if (isEditModalOpen()) {
+    <app-edit-datasource-modal [projectId]="projectId()" (close)="hideEditModal()" (submit)="handleEdit()" />
+  }
 
 
 </div>
