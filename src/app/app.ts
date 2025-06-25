@@ -2,19 +2,21 @@ import { Component, Inject, inject, PLATFORM_ID } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import {Toast} from './shared/components/toast';
 import {Sidebar} from './shared/components/sidebar/sidebar';
+import {IconSidebar} from './shared/components/sidebar/icon-sidebar';
 import { fromEvent } from 'rxjs';
 import { deleteLocalStorageItem } from './shared/utils/utils';
 import { isPlatformBrowser } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
   imports: [
     Toast,
     Sidebar,
+    IconSidebar,
     RouterOutlet
   ],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  templateUrl: './app.html'
 })
 export class App {
   router: Router = inject(Router);

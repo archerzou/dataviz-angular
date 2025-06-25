@@ -22,6 +22,7 @@
     "@reduxjs/toolkit": "^2.2.7",
     "@tailwindcss/postcss": "^4.1.10",
     "apollo-angular": "^10.0.3",
+    "chart.js": "^4.5.0",
     "graphql": "^16.11.0",
     "ngx-highlightjs": "^14.0.1",
     "postcss": "^8.5.5",
