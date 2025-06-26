@@ -98,7 +98,7 @@ import { CommonModule } from '@angular/common';
             </a>
           </div>
           <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {{year}} DataViz, Inc. All rights reserved.
+            &copy; {{year}} Archer Zou.
           </p>
         </div>
       </div>
